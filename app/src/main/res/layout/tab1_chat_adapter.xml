@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootElementVid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_img_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:paddingLeft="@dimen/_11ssp"
+                android:src="@drawable/ic_young"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10ssp"
+                android:paddingTop="@dimen/_5ssp"
+                android:text="Belal Khan assdasd"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/profile_image"
+                app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10ssp"
+                android:text="Ranchi, Jharkhand asdasdsadasd asdasdasdsdasdasd"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/b1"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toStartOf="@+id/textViewUsername"
+                app:layout_constraintTop_toBottomOf="@+id/textViewUsername" />
+
+            <TextView
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_15ssp"
+                android:paddingRight="@dimen/_11ssp"
+                android:text="03:18 pm"
+
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/b1"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewUsername"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewUsername" />
+
+
+
+            <TextView
+                android:id="@+id/tvNotReaded"
+                android:layout_width="@dimen/_18ssp"
+                android:layout_height="@dimen/_18ssp"
+                android:background="@drawable/rounded_txt"
+                android:layout_marginTop="@dimen/_4ssp"
+                android:gravity="center"
+                android:text="500"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintRight_toRightOf="@+id/textViewTime"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTime"
+                app:layout_constraintLeft_toLeftOf="@+id/textViewTime"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

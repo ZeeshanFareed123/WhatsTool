@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/_18ssp"
+        android:paddingRight="@dimen/_18ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/number_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50ssp"
+            android:layout_marginTop="@dimen/_35ssp"
+            android:background="@drawable/rounded_country"
+            app:ccp_contentColor="@color/white"
+            app:ccp_arrowColor="@color/white"
+            app:ccp_arrowSize="@dimen/_25ssp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_10ssp"
+            android:paddingRight="@dimen/_10ssp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="true"
+            app:ccp_showNameCode="true"
+            app:ccp_textSize="@dimen/_14ssp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </com.hbb20.CountryCodePicker>
+
+        <EditText
+            android:id="@+id/number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50ssp"
+            android:layout_marginTop="@dimen/_7ssp"
+            android:background="@drawable/rounded_et"
+            android:hint="Enter your Number"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_20ssp"
+            android:paddingRight="@dimen/_20ssp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintLeft_toLeftOf="@+id/number_code"
+            app:layout_constraintRight_toRightOf="@+id/number_code"
+            app:layout_constraintTop_toBottomOf="@+id/number_code" />
+
+        <EditText
+            android:id="@+id/msg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100ssp"
+            android:layout_marginTop="@dimen/_7ssp"
+            android:background="@drawable/rounded_et"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:hint="Write your message..."
+            android:inputType="textMultiLine"
+            android:paddingLeft="@dimen/_20ssp"
+            android:paddingRight="@dimen/_20ssp"
+            android:paddingTop="@dimen/_10ssp"
+            android:paddingBottom="@dimen/_10ssp"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintLeft_toLeftOf="@+id/number_code"
+            app:layout_constraintRight_toRightOf="@+id/number_code"
+            app:layout_constraintTop_toBottomOf="@+id/number_edittext" />
+
+        <Button
+            android:id="@+id/direct_messge_butn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_marginTop="@dimen/_30ssp"
+            android:layout_marginRight="@dimen/_20ssp"
+            android:layout_marginLeft="@dimen/_20ssp"
+            android:background="@drawable/rounded_btn"
+            android:text="Send"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="@+id/msg_edittext"
+            app:layout_constraintRight_toRightOf="@+id/msg_edittext"
+            app:layout_constraintTop_toBottomOf="@+id/msg_edittext" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

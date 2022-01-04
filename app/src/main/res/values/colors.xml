@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#008577</color>
+<color name="colorPrimaryDark">#00574B</color>
+<color name="colorAccent">#D81B60</color>
+<color name="white">#ffffff</color>
+<color name="backgroundColor">#283148</color>
+<color name="backgroundColor1">#E2434C63</color>
+<color name="greendark">#25d366</color>
+<color name="grey"> #A9A9A9</color>
+<color name="b1"> #707070</color>
+<color name="yellow_star"> #ffcc00</color>
+<color name="black">#000000</color>
+<color name="colorPremium">#FEBF56</color>
+<color name="top">  #5e11e9</color>
+<color name="bottom">  #9223fe</color>
+<color name="backgroundPopUpWindow">#DC283148</color>
+
+
+<color name="mediumseagreen">#17C17E</color>
+<color name="transprent">#00000000</color>
+<color name="yellowColor">#FFC700</color>
+<color name="lightGrey">#E5E5E5</color>
+</resources>
+

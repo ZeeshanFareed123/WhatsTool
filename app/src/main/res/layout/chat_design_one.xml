@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_above="@+id/multiple_del_btn22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+        android:orientation="horizontal"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image_chat_one"
+                android:layout_width="@dimen/_70ssp"
+                android:layout_height="@dimen/_70ssp"
+                android:paddingTop="@dimen/_20ssp"
+                android:paddingLeft="@dimen/_10ssp"
+                android:src="@drawable/ic_young"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#FF000000"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chat_one_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp"
+                android:clipToPadding="false"
+                android:scaleType="fitXY"
+                android:paddingTop="@dimen/_20ssp"
+                android:paddingLeft="@dimen/_8ssp"
+                android:paddingRight="@dimen/_13ssp"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/multiple_del_btn22"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:layout_marginBottom="@dimen/_10ssp"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <Button
+            android:id="@+id/direct_messge_butn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40ssp"
+            android:layout_marginRight="@dimen/_20ssp"
+            android:layout_marginLeft="@dimen/_20ssp"
+            android:background="@drawable/rounded_btn"
+            android:text="Reply From Whatsapp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+             />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</RelativeLayout>

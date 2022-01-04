@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">What-sTools</string>
+    <string name="service_label">Whats Tool</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="notification_listener_service">"Notification Listener Service"</string>
+    <string name="notification_listener_service_explanation">"For the the app. to work you need to enable the Notification Listener Service. Enable it now?"</string>
+
+  <!--  //testId's-->
+    <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+</resources>

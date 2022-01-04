@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rel_privacy22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mediumseagreen"
+        android:alpha="0.5"
+        android:clipChildren="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rel_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="130dp"
+        android:background="@color/white"
+        android:clipChildren="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tp_back_pri"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tp_back_privacy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/tp_id_back"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="70dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/top_privacy11"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20ssp"
+            android:layout_marginRight="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:text="To continue please confirm that you have read our privacy policy and accpet it"
+            android:textSize="@dimen/_12ssp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tp_id_back" />
+
+
+        <TextView
+            android:id="@+id/tv_term_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20ssp"
+            android:layout_marginRight="@dimen/_20ssp"
+            android:layout_marginBottom="@dimen/_50ssp"
+            android:gravity="center"
+            android:text="Privacy policy"
+            android:textColor="@color/mediumseagreen"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_terms" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/asa"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_term_link">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cancell"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_1ssp"
+                android:layout_marginBottom="@dimen/_1ssp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="@dimen/_20ssp"
+                app:cardElevation="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ok_cont"
+
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_1ssp"
+                android:layout_marginRight="@dimen/_15ssp"
+                android:layout_marginBottom="@dimen/_1ssp"
+                app:cardBackgroundColor="@color/mediumseagreen"
+                app:cardCornerRadius="@dimen/_20ssp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_vid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Done"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

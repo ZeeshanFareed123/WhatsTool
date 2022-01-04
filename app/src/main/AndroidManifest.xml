@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobi.whatstool.statussaver.directchat.unseen.hiddenchat">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.mobi.whatstool.statussaver.directchat.unseen.hiddenchat.KoinApp"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.mobi.whatstool.statussaver.directchat.unseen.hiddenchat.activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mobi.whatstool.statussaver.directchat.unseen.hiddenchat.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobi.whatstool.statussaver.directchat.unseen.hiddenchat.activities.FullScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mobi.whatstool.statussaver.directchat.unseen.hiddenchat.activities.IntroScreen"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.mobi.whatstool.statussaver.directchat.unseen.hiddenchat.activities.ChatOneUser"
+            android:screenOrientation="portrait"/>
+
+        <service android:name="com.mobi.whatstool.statussaver.directchat.unseen.hiddenchat.services.NotificationListenerService"
+            android:exported="false"
+            android:label="@string/service_label"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id"/>
+    </application>
+
+</manifest>

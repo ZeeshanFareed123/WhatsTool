@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <RelativeLayout
+            android:layout_above="@+id/btm_cv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btm_cv"
+            >
+            <VideoView
+                android:id="@+id/vv_fullscreen_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                />
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/iv_fullscreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btm_cv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_share"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45ssp"
+                app:cardElevation="0dp"
+                android:layout_marginLeft="@dimen/_20ssp"
+                app:cardCornerRadius="@dimen/_23ssp"
+                app:cardBackgroundColor="@color/yellowColor"
+                app:layout_constraintWidth_percent="0.36"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_gravity="center">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_save"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45ssp"
+                app:cardElevation="0dp"
+                android:layout_marginRight="@dimen/_20ssp"
+                app:cardCornerRadius="@dimen/_23ssp"
+                app:cardBackgroundColor="@color/mediumseagreen"
+                app:layout_constraintWidth_percent="0.36"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_gravity="center">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_delete"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45ssp"
+                app:cardElevation="0dp"
+                android:visibility="invisible"
+                android:layout_marginRight="@dimen/_20ssp"
+                app:cardCornerRadius="@dimen/_23ssp"
+                app:cardBackgroundColor="@color/mediumseagreen"
+                app:layout_constraintWidth_percent="0.36"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <TextView
+                    android:id="@+id/tv_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:layout_gravity="center">
+                </TextView>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
